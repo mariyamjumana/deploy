@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">ShopEasy</h1>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search products..."
+            aria-label="Search products"
+        >
+
+        <div class="cart">
+            🛒 Cart: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to ShopEasy!</h2>
+        <p>Discover great products at great prices.</p>
+        <a href="#products" class="shop-btn">Shop Now</a>
+    </section>
+
+    <main>
+        <h2 id="products">Our Products</h2>
+
+        <div class="product-container" id="product-list">
+
+            <div class="product-card" data-name="Headphones">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                     alt="Headphones">
+                <h3>Headphones</h3>
+                <p>₹999</p>
+                <button onclick="addToCart('Headphones', 999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card" data-name="Smart Watch">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+                     alt="Smart watch">
+                <h3>Smart Watch</h3>
+                <p>₹1,499</p>
+                <button onclick="addToCart('Smart Watch', 1499)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card" data-name="Shoes">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+                     alt="Red sports shoes">
+                <h3>Sports Shoes</h3>
+                <p>₹1,999</p>
+                <button onclick="addToCart('Sports Shoes', 1999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card" data-name="Backpack">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+                     alt="Backpack">
+                <h3>Backpack</h3>
+                <p>₹799</p>
+                <button onclick="addToCart('Backpack', 799)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <section class="cart-details">
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <h3>Total: ₹<span id="cart-total">0</span></h3>
+            <button id="clear-cart" class="clear-btn">Clear Cart</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
