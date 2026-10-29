@@ -11,12 +11,12 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: #f5f6fa;
-    color: #222;
+    background: #F3E8FF;
+    color: #3B0764;
 }
 
 header {
-    background: #172554;
+    background: #6B21A8;
     color: white;
     padding: 18px 6%;
     display: flex;
@@ -27,7 +27,7 @@ header {
 }
 
 .logo {
-    color: #facc15;
+    color: #FACC15;
     font-size: 28px;
 }
 
@@ -35,7 +35,7 @@ header {
     padding: 11px;
     width: 260px;
     max-width: 100%;
-    border: none;
+    border: 2px solid #E9D5FF;
     border-radius: 6px;
     font-size: 15px;
 }
@@ -48,13 +48,13 @@ header {
 .hero {
     text-align: center;
     padding: 75px 20px;
-    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    background: linear-gradient(135deg, #E9D5FF, #FAF5FF);
 }
 
 .hero h2 {
     font-size: 36px;
     margin-bottom: 15px;
-    color: #172554;
+    color: #6B21A8;
 }
 
 .hero p {
@@ -64,11 +64,13 @@ header {
 
 .shop-btn {
     display: inline-block;
-    background: #2563eb;
-    color: white;
+    background: #FACC15;
+    color: #3B0764;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.2s;
 }
 
 main {
@@ -79,6 +81,7 @@ main > h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
+    color: #6B21A8;
 }
 
 .product-container {
@@ -88,16 +91,18 @@ main > h2 {
 }
 
 .product-card {
-    background: white;
+    background: #FFFFFF;
     padding: 18px;
+    border: 1px solid #E9D5FF;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s;
+    box-shadow: 0 4px 12px rgba(107, 33, 168, 0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(107, 33, 168, 0.18);
 }
 
 .product-card img {
@@ -109,39 +114,46 @@ main > h2 {
 
 .product-card h3 {
     margin: 15px 0 10px;
+    color: #3B0764;
 }
 
 .product-card p {
-    color: #2563eb;
+    color: #7E22CE;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
 button {
-    background: #2563eb;
-    color: white;
+    background: #FACC15;
+    color: #3B0764;
     padding: 11px 16px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.2s;
 }
 
 button:hover,
 .shop-btn:hover {
-    background: #1d4ed8;
+    background: #EAB308;
+    transform: translateY(-1px);
 }
 
 .cart-details {
     margin-top: 55px;
-    background: white;
+    background: #FFFFFF;
     padding: 25px;
+    border: 1px solid #E9D5FF;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(107, 33, 168, 0.08);
 }
 
 .cart-details h2 {
     margin-bottom: 20px;
+    color: #6B21A8;
 }
 
 #cart-items {
@@ -154,26 +166,29 @@ button:hover,
 }
 
 .remove-btn {
-    background: #dc2626;
+    background: #DC2626;
+    color: white;
     padding: 5px 10px;
     margin-left: 10px;
 }
 
 .remove-btn:hover,
 .clear-btn:hover {
-    background: #b91c1c;
+    background: #B91C1C;
 }
 
 .cart-details h3 {
     margin-bottom: 18px;
+    color: #6B21A8;
 }
 
 .clear-btn {
-    background: #dc2626;
+    background: #DC2626;
+    color: white;
 }
 
 footer {
-    background: #172554;
+    background: #6B21A8;
     color: white;
     text-align: center;
     padding: 22px;
